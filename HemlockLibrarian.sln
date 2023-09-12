@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HemlockLibrarianStaffClient", "HemlockLibrarianStaffClient\HemlockLibrarianStaffClient.csproj", "{89441D76-3F45-45B6-AFD2-E6FC52D01D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HemlockCheckout", "HemlockCheckout\HemlockCheckout.csproj", "{53622D7A-3A36-492B-9B28-8E09E54654D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89441D76-3F45-45B6-AFD2-E6FC52D01D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89441D76-3F45-45B6-AFD2-E6FC52D01D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89441D76-3F45-45B6-AFD2-E6FC52D01D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89441D76-3F45-45B6-AFD2-E6FC52D01D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53622D7A-3A36-492B-9B28-8E09E54654D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53622D7A-3A36-492B-9B28-8E09E54654D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53622D7A-3A36-492B-9B28-8E09E54654D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53622D7A-3A36-492B-9B28-8E09E54654D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAEF010F-D1DC-416C-A5A8-D04B8FE3ACE5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89441D76-3F45-45B6-AFD2-E6FC52D01D50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HemlockLibrarianStaffClient</RootNamespace>
+    <AssemblyName>HemlockLibrarianStaffClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookEditorForm.Designer.cs">
+      <DependentUpon>BookEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManagerForm.Designer.cs">
+      <DependentUpon>BookManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchEditorForm.Designer.cs">
+      <DependentUpon>BranchEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BranchManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchManagerForm.Designer.cs">
+      <DependentUpon>BranchManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDoubleBuffering.cs" />
+    <Compile Include="HoldEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoldEditorForm.Designer.cs">
+      <DependentUpon>HoldEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoldManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoldManagerForm.Designer.cs">
+      <DependentUpon>HoldManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemEditorForm.Designer.cs">
+      <DependentUpon>ItemEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemManagerForm.Designer.cs">
+      <DependentUpon>ItemManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlConnectionInfo.cs" />
+    <Compile Include="SqlErrorDialog.cs" />
+    <Compile Include="TransactionManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionManagerForm.Designer.cs">
+      <DependentUpon>TransactionManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserEditorForm.Designer.cs">
+      <DependentUpon>UserEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagerForm.Designer.cs">
+      <DependentUpon>UserManagerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BookEditorForm.resx">
+      <DependentUpon>BookEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManagerForm.resx">
+      <DependentUpon>BookManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchEditorForm.resx">
+      <DependentUpon>BranchEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BranchManagerForm.resx">
+      <DependentUpon>BranchManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoldEditorForm.resx">
+      <DependentUpon>HoldEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoldManagerForm.resx">
+      <DependentUpon>HoldManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemEditorForm.resx">
+      <DependentUpon>ItemEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemManagerForm.resx">
+      <DependentUpon>ItemManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TransactionManagerForm.resx">
+      <DependentUpon>TransactionManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserEditorForm.resx">
+      <DependentUpon>UserEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagerForm.resx">
+      <DependentUpon>UserManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
